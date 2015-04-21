@@ -58,7 +58,9 @@ $(document).ready(function () {
         adaptiveHeight: true,
     });
 
-
+////////////////////////////////////////////////
+// testimonial bxslider
+////////////////////////////////////////////////
     //Set vert tabs height initially ( reset on resize below )
     $(window).width() > 640 ? $('#vertTabs').height($('#vertContent').height()) : '';
 });
