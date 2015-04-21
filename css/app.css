@@ -82,6 +82,10 @@ a:hover {color: #ee3b33; border-bottom: 1px solid #ee3b33;}*/
 /* ROW VERTICAL SPACERS
    ======================== */
 /* ---- base (all) ---- */
+.xxtra-full-top {margin-top: 6.25em; /* 100px */}
+.xxtra-full-btm {margin-bottom: 6.25em; /* 100px */}
+.xxtra-full-top-pad {padding-top: 6.25em; /* 100px */}
+.xxtra-full-btm-pad {padding-bottom: 6.25em; /* 100px */}
 .xtra-full-top {margin-top: 3.125em; /* 50px */}
 .xtra-full-btm {margin-bottom: 3.125em; /* 50px */}
 .xtra-full-top-pad {padding-top: 3.125em; /* 50px */}
@@ -155,10 +159,10 @@ h1 {
     margin-bottom: .5em;
     position: relative;
 }
-.headline-thick-lg {text-transform: uppercase; color: #ee3b33; font-size: 1rem; font-family: "AvenirLTStd-Black", sans-serif; font-weight: normal; font-style: normal;}
-.headline-thick-md {color: #ee3b33; font-size: 1rem; font-family: "AvenirLTStd-Black", sans-serif; font-weight: normal; font-style: normal; }
-.headline-thin-md {font-size: 1rem; color: #ee3b33;} /* increases with larger screen sizes */
-.headline-thin-sm {font-size: 1rem; color: #ee3b33;}
+.headline-thick-lg {text-transform: uppercase; font-size: 1rem; font-family: "AvenirLTStd-Black", sans-serif; font-weight: normal; font-style: normal;}
+.headline-thick-md {font-size: 1rem; font-family: "AvenirLTStd-Black", sans-serif; font-weight: normal; font-style: normal; }
+.headline-thin-md {font-size: 1rem;} /* increases with larger screen sizes */
+.headline-thin-sm {font-size: 1rem;}
  /* ---- 640 ( + ) ---- */
 @media screen and (min-width: 40em){
     h1 {text-align: left; font-size: 3.4375rem; /* 55px */ float: left;}
@@ -166,8 +170,9 @@ h1 {
 }
 /* ---- 768 ( + ) ---- */
 @media screen and (min-width: 48em){
-    .headline-thick-md {color: #ee3b33; font-size: 1.3125rem; /* 21px */}
+    .headline-thick-md {font-size: 1.3125rem; /* 21px */}
     .headline-thin-md {font-size: 1.3125rem; /* 21px */}
+    .headline-thin-sm {font-size: 1.125rem; /* 18px */}
 }
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.my../fonts.net/count/2de1db");
@@ -199,11 +204,19 @@ button:hover, button:focus, .button:hover, .button:focus {color: #ee3b33; backgr
 	-webkit-animation-duration: 1s;-moz-animation-duration: 1s;-ms-animation-duration: 1s;-o-animation-duration: 1s;animation-duration: 1s;
     -webkit-animation-delay: 1s;-moz-animation-delay: 1s;-ms-animation-delay: 1s;-o-animation-delay: 1s;animation-delay: 1s;
 }
+/* BUTTON 2 (footer CTA)
+   ======================== */ 
 .btn-2 {
     width: 100%; 
     font-size: 0.875rem;
     padding: .85rem 2rem;
 }
+/* ---- 1024 ( + ) ---- */
+@media screen and (min-width: 64em){
+    .btn-2 {width: auto;}
+}
+/* BUTTON 3 (alt main CTA)
+   ======================== */ 
 .btn-3 {
     background: #343841; /* dark gray */
     border: 1px solid #343841;
@@ -213,11 +226,13 @@ button:hover, button:focus, .button:hover, .button:focus {color: #ee3b33; backgr
 @media screen and (min-width: 48em){
     .btn-3 {margin: 0 0 0 2.8125em; position: relative; display: inline-block;}
 }
+/* BUTTON 4 (email MODAL)
+   ======================== */ 
+.btn-4 {width: 100%; font-size: 1.125rem;}
 /* ---- 1024 ( + ) ---- */
 @media screen and (min-width: 64em){
-    .btn-2 {width: auto;}
+    .btn-4 {width: auto;}
 }
-
 
 /* ================================================================================
    PRE-HEADER
@@ -541,6 +556,7 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     background-size: cover;
     background-color: #ee3b33;
 }
+.blocks-col:hover .blocks-overlay {opacity: 0.7; background: #ee3b33; }
 .blocks-col-alt1 {background-color: #343841;}
 .blocks-col-alt2 {background-color: #5f646a;}
 .blocks-overlay { 
@@ -554,10 +570,9 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     -webkit-backface-visibility: hidden; /*prevents safari flicker*/
     -webkit-transition: all 0.25s ease-in-out;-moz-transition: all 0.25s ease-in-out;-ms-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;transition: all 0.25s ease-in-out;
 } 
-.blocks-col:hover .blocks-overlay {opacity: 0.7; background: #ee3b33; }
 .blocks-body { /* centers the copy in the block */
     width: 100%;
-    padding: 25% 15% 25% 15%;
+    padding: 15% 10%;
     position: relative;
 }
 .blocks-headline {
@@ -587,9 +602,6 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     padding: -4% -9%;
     margin-bottom: 1em;
 }
-.blocks-text a {color: #343841;}
-.blocks-text a:hover {color: #ffffff;}
-.blocks-text-alt1 {color: #ffffff; font-size: 1rem; font-family: "AvenirLTStd-Roman", sans-serif; margin-bottom: 1em;}
 a.blocks-text-link {
     color: #ffffff; 
     font-size: 1.1875rem; /* 19px */
@@ -598,7 +610,16 @@ a.blocks-text-link {
     font-style: normal;
 }
 /*a.blocks-text-link:hover {color: #343841;}*/
+.blocks-text-alt1 {
+    color: #ffffff; 
+    font-size: 1rem; 
+    font-family: "AvenirLTStd-Roman", sans-serif; 
+    margin-bottom: 1em;
+}
+.blocks-text-alt1 a {font-family: "AvenirLTStd-Black", sans-serif; color: #ffffff;}
+.blocks-text-alt1 a:hover {color: #343841;}
 @media screen and (min-width: 48em) {
+    .blocks-body {padding: 20% 15%;}
     .blocks-headline {font-size: 1.625rem; padding: 3% 6%;}
     .blocks-text {font-size: 1.625rem; padding: -3% -6%;}
     a.blocks-text-link {font-size: 1.625rem;}
@@ -659,14 +680,35 @@ a.blocks-text-link {
 .tabs-content.vertical {background: #343841; margin-left: 0;}
 .tabs-content.vertical p {color: #ffffff;}
 .tabs-inset-img {position: relative; border: solid 13px #ffffff;}
-  /* ---- 748 ( + ) ---- */
-@media screen and (min-width: 46.75em){
-}
- /* ---- 1080 ( + ) ---- */
-@media screen and (min-width: 67.5em){
-    
-}
 
+ /* ACCORDION
+   ======================== */
+ /* ---- base (all) ---- */ 
+ .accordion-icon {padding-top: .15em;}
+ .accordion .accordion-navigation:first-child  > a {border-top: none;}
+ /*.accordion .accordion-navigation:last-child  > a {border-bottom: 1px solid #c9cbca;}*/
+ .accordion .accordion-navigation > a {
+     text-transform: uppercase; 
+     color: #ee3b33; 
+     font-size: 2rem; 
+     font-family: "AvenirLTStd-Black", sans-serif; 
+     font-weight: normal; 
+     font-style: normal;
+     vertical-align: middle;
+     background: #ffffff;
+     border-top: 1px solid #c9cbca;
+     border-bottom: 1px solid #c9cbca;
+     padding: 1.5em .5em;
+}
+ .accordion .accordion-navigation > a:hover {background: none;}
+ .accordion .accordion-navigation.active > a {background: none; border: none;}
+ .accordion .accordion-navigation > .content {padding-left: 1em; border: none;}
+ .accordion .accordion-navigation > .content.active {border: none;}
+  /* ---- 1200 (+) ---- */ 
+@media screen and (min-width: 75em){
+    .accordion .accordion-navigation > a {padding: 1.5em 0;}
+    .accordion .accordion-navigation > .content {padding-left: 0;}
+}
  /* ICONS
    ======================== */
  /* ---- base (all) ---- */ 
