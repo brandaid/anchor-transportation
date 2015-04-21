@@ -166,8 +166,8 @@ h1 {
 }
 /* ---- 768 ( + ) ---- */
 @media screen and (min-width: 48em){
-    .headline-thick-md {color: #ee3b33; font-size: 1.3125rem;}
-    .headline-thin-md {font-size: 1.3125rem;}
+    .headline-thick-md {color: #ee3b33; font-size: 1.3125rem; /* 21px */}
+    .headline-thin-md {font-size: 1.3125rem; /* 21px */}
 }
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.my../fonts.net/count/2de1db");
@@ -542,7 +542,7 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     background-color: #ee3b33;
 }
 .blocks-col-alt1 {background-color: #343841;}
-.blocks-col-alt2 {background-color: #343841;}
+.blocks-col-alt2 {background-color: #5f646a;}
 .blocks-overlay { 
     position: absolute; 
     min-width: 100%; 
@@ -555,7 +555,7 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     -webkit-transition: all 0.25s ease-in-out;-moz-transition: all 0.25s ease-in-out;-ms-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;transition: all 0.25s ease-in-out;
 } 
 .blocks-col:hover .blocks-overlay {opacity: 0.7; background: #ee3b33; }
-.blocks-body {
+.blocks-body { /* centers the copy in the block */
     width: 100%;
     padding: 25% 15% 25% 15%;
     position: relative;
@@ -572,6 +572,7 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     padding: 4% 9%;
     margin-bottom: 1em;
 }
+.blocks-headline-alt1 {background-color: #343841;}
 .blocks-headline a {color: #ffffff;}
 /*.blocks-headline a:hover {color: #343841;}*/
 .blocks-text {
@@ -586,6 +587,9 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     padding: -4% -9%;
     margin-bottom: 1em;
 }
+.blocks-text a {color: #343841;}
+.blocks-text a:hover {color: #ffffff;}
+.blocks-text-alt1 {color: #ffffff; font-size: 1rem; font-family: "AvenirLTStd-Roman", sans-serif; margin-bottom: 1em;}
 a.blocks-text-link {
     color: #ffffff; 
     font-size: 1.1875rem; /* 19px */
