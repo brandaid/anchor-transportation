@@ -192,8 +192,7 @@ button, .button {
     font-style: normal;
     padding: 1rem 2rem 1.0625rem 2rem;
 }
-button:hover, button:focus, .button:hover, .button:focus {background-color: #ffffff; border: 1px solid #ee3b33;}
-button:hover, button:focus, .button:hover, .button:focus {color: #ee3b33;}
+button:hover, button:focus, .button:hover, .button:focus {color: #ee3b33; background-color: #ffffff; border: 1px solid #ee3b33;}
 /* BUTTON 1 (carousel CTA)
    ======================== */ 
 .btn-1 {
@@ -205,14 +204,18 @@ button:hover, button:focus, .button:hover, .button:focus {color: #ee3b33;}
     font-size: 0.875rem;
     padding: .85rem 2rem;
 }
+.btn-3 {
+    background: #343841; /* dark gray */
+    border: 1px solid #343841;
+}
+.btn-3:hover, .btn-3:focus {color: #343841; background-color: #ffffff; border: 1px solid #343841;}
+/* ---- 768 ( + ) ---- */
+@media screen and (min-width: 48em){
+    .btn-3 {margin: 0 0 0 2.8125em; position: relative; display: inline-block;}
+}
 /* ---- 1024 ( + ) ---- */
 @media screen and (min-width: 64em){
     .btn-2 {width: auto;}
-}
-.btn-3 {width: 100%; font-size: 1.125rem;}
-/* ---- 1024 ( + ) ---- */
-@media screen and (min-width: 64em){
-    .btn-3 {width: auto;}
 }
 
 
@@ -538,6 +541,8 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
     background-size: cover;
     background-color: #ee3b33;
 }
+.blocks-col-alt1 {background-color: #343841;}
+.blocks-col-alt2 {background-color: #343841;}
 .blocks-overlay { 
     position: absolute; 
     min-width: 100%; 

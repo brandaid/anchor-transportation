@@ -11,6 +11,7 @@ $(function() {
         }, 40);
     }).resize();
 });
+
 ////////////////////////////////////////////////
 // back to top
 ////////////////////////////////////////////////
@@ -31,10 +32,12 @@ jQuery('#to-top').click(function(event) {
     }, duration);
     return false;
 });
-////////////////////////////////////////////////
-// hero bxslider
-////////////////////////////////////////////////
-$(document).ready(function() {
+
+$(document).ready(function() { // BEGIN DOCUMENT READY FUNCTION //
+    
+    ////////////////////////////////////////////////
+    // hero bxslider
+    ////////////////////////////////////////////////
     $('.hero-slider').bxSlider({
         //adaptiveHeight: true,
         mode: 'fade',
@@ -42,11 +45,10 @@ $(document).ready(function() {
         pause: 8000,
         adaptiveHeight: true,
     });
-});
-////////////////////////////////////////////////
-// testimonial bxslider
-////////////////////////////////////////////////
-$(document).ready(function() {
+    
+    ////////////////////////////////////////////////
+    // testimonial bxslider
+    ////////////////////////////////////////////////
     $('.quote-slider').bxSlider({
         //adaptiveHeight: true,
         mode: 'fade',
@@ -54,12 +56,14 @@ $(document).ready(function() {
         pause: 8000,
         adaptiveHeight: true,
     });
+    
     ////////////////////////////////////////////////
-    // testimonial bxslider
+    // TABS HACK
     ////////////////////////////////////////////////
     //Set vert tabs height initially ( reset on resize below )
     $(window).width() > 640 ? $('#vertTabs').height($('#vertContent').height()) : '';
-});
-$(window).resize(function() {
+    });
+    $(window).resize(function() {
     $(window).width() > 640 ? $('#vertTabs').height($('#vertContent').height()) : '';
-});
+    
+}); // END DOCUMENT READY FUNCTION //
