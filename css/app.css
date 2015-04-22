@@ -653,7 +653,7 @@ a.blocks-text-link {
  /* TABS
    ======================== */
  /* ---- base (all) ---- */ 
-.tabs-container {margin: 0 auto; background-color: #222222;}
+.tabs-container {margin: 0 auto; background-color: #222222; display: inline-block !important; /* keeps content afterwards from bumping into it */}
 .tabs-container .row {margin: 0; padding: 0;}
 .tabs-info-pad {padding: 5%;}
 .tabs.vertical {background-color: #222222;}
@@ -680,6 +680,7 @@ a.blocks-text-link {
 .tabs-content.vertical {background: #343841; margin-left: 0;}
 .tabs-content.vertical p {color: #ffffff;}
 .tabs-inset-img {position: relative; border: solid 13px #ffffff;}
+.tabs ul li {color: #ffffff;}
 
  /* ACCORDION
    ======================== */
