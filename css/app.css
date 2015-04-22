@@ -495,14 +495,15 @@ ul.off-canvas-list li.social a {float: left; padding: 1.5em 2.5em; 1.5em 2.5em; 
 @media screen and (min-width: 40em){
     .hero-interior-info-pad {padding: 5% 0;}
 }
- /* ---- 768 ( + ) ---- */
-@media screen and (min-width: 48em){}
- /* ---- 1080 ( + ) ---- */
-@media screen and (min-width: 67.5em){}
 
 /* ================================================================================
    CONTENT
    ================================================================================ */
+   
+/* SECONDARY NAVIGATION
+   ======================== */
+/* ---- base (mobile only) ---- */
+.sec-nav {margin: 0 auto; background: #cccccc; width: 100%; display: inline-block;}
  
  /* MAIN
    ======================== */
@@ -653,7 +654,7 @@ a.blocks-text-link {
  /* TABS
    ======================== */
  /* ---- base (all) ---- */ 
-.tabs-container {margin: 0 auto; background-color: #222222; width: 100% !important; display: inline-block !important;} /* container needs 100% width and inline-block to keep following content off of it */
+.tabs-container {margin: 0 auto; background-color: #222222; width: 100% !important; display: inline-block !important; position: relative;} /* container needs 100% width and inline-block to keep following content off of it */
 .tabs-container .row {margin: 0; padding: 0;}
 .tabs-info-pad {padding: 5%;}
 .tabs.vertical {background-color: #222222;}
@@ -742,6 +743,38 @@ a.blocks-text-link {
  /* ---- 980 (+) ---- */ 
 @media screen and (min-width: 61.25em){
     .icon-copy {padding: 0 0 0 25%;}
+}
+
+ /* NUMBERS
+   ======================== */
+ /* ---- base (all) ---- */ 
+.number {                
+    display:inline-block;
+    margin: 0;
+    border-radius: 50%;    
+    background-color: #ee3b33;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: "AvenirLTStd-Black", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding: 8px 9px 5px 9px;    
+} 
+ /* ---- 480 (+) ---- */ 
+@media screen and (min-width: 30em){
+    .number {
+        margin: 5px;
+        font-size: 2rem;
+        padding: 12px 16px 8px 16px; 
+    }
+}
+ /* ---- 768 (+) ---- */ 
+@media screen and (min-width: 48em){
+    .number {
+        margin: 10px;
+        font-size: 3rem;
+        padding: 13px 20px 10px 20px; 
+    }
 }
 
  /* STAFF
