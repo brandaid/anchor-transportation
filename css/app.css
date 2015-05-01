@@ -788,6 +788,7 @@ a.blocks-text-link {
     .accordion .accordion-navigation > a.small {padding: 1em 0;}
     .accordion .accordion-navigation > .content {padding-left: 0;}
 }
+
  /* ICONS
    ======================== */
  /* ---- base (all) ---- */ 
@@ -880,6 +881,11 @@ a.blocks-text-link {
  ul.staff-text {list-style: none; margin: 0; padding: 0 0 2em 0;}
  ul.staff-text a {color: #ee3b33;}
  ul.staff-text a:hover {color: #222222;}
+ 
+  /* AFFILIATIONS
+   ======================== */
+ /* ---- base (all) ---- */  
+.affiliations-img {margin: 0 0 3em 0; position: relative; border: solid 13px #ffffff;}
 
  /* REVEAL MODAL
    ======================== */
