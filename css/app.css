@@ -1002,7 +1002,7 @@ a.label:hover {color: #ffffff; background: #ee3b33;}
 .footer ul {list-style: none; margin: 0;}
 .footer ul li {display: inline-block; padding: 0 .5em 0 0;}
 .footer ul li:last-child {padding: 0; margin: 0;}
-.footer ul li a {color: #ee3b33; font-size: 0.875rem; /* 14px */}
+.footer ul li a {color: #ee3b33; font-size: 0.875rem; /* 14px */ border: none;}
 .footer ul li a:hover {color: #878b8f; border: 0;}
 .footer ul li.social a {padding-right: 1.5em;}
 .footer ul li.social a.social-last {padding: 0;}
