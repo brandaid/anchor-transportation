@@ -799,6 +799,8 @@ a.blocks-text-link:hover {color: #ffffff; border-bottom: 1px solid #ffffff;}
  .accordion .accordion-navigation.active > a {background: none; border: none;}
  .accordion .accordion-navigation > .content {padding-left: 0; border: none;}
  .accordion .accordion-navigation > .content.active {border: none;}
+ .accordion ul,
+ .accordion ol {margin-top: 1em; margin-bottom: 1.5em;}
   /* ---- 1200 (+) ---- */ 
 @media screen and (min-width: 75em){
     .accordion .accordion-navigation > a {padding: 1.5em 0;}
